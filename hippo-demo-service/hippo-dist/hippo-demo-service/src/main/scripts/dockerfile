@@ -1,0 +1,8 @@
+FROM registry.igoldenbeta.com/java:1.0
+
+MAINTAINER sl shaoling@igoldenbeta.com
+
+
+ADD curr /deploy/docker/cloud.igoldenbeta.hippo.demo.service
+RUN chmod 777 /deploy/docker/cloud.igoldenbeta.hippo.demo.service/start.sh
+CMD ["nohup","/deploy/docker/cloud.igoldenbeta.hippo.demo.service/start.sh","&"]
