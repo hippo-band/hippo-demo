@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
-	<property name="appid" value="cloud.igoldenbeta.hippo.demo.service" />
+	<property name="appid" value="com.github.hippo.demo.service" />
 	<!-- 输出到文件 -->
 	<appender name="FILE"
 			  class="ch.qos.logback.core.rolling.RollingFileAppender">

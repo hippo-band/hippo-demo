@@ -32,5 +32,4 @@ public class TestServiceTest {
     String usrname = testService.getUserName("12345");
     System.out.println(usrname);
   }
-
 }

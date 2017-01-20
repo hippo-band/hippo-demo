@@ -1,7 +1,7 @@
 #!/bin/sh
 
-APP_ID="cloud.igoldenbeta.hippo.demo.service"
-MAIN_CLASS="cloud.igoldenbeta.hippo.demo.ServerContainer"
+APP_ID="com.github.hippo.demo.service"
+MAIN_CLASS="com.github.hippo.demo.ServerContainer"
 
 SCRIPTS_DIR=`dirname "$0"`
 PROJECT_DIR=`cd $SCRIPTS_DIR && pwd`

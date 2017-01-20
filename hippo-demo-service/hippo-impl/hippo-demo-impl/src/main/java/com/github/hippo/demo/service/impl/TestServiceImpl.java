@@ -11,7 +11,12 @@ public class TestServiceImpl implements TestService {
   @Override
   public TestResponse test(TestRequest request) {
     TestResponse response = new TestResponse();
-    response.setResult(request.getId() + "," + request.getMsg() + ",success");
+    try {
+      Thread.sleep(3 * 1000L);
+      response.setResult(request.getId() + "," + request.getMsg() + ",success");
+    } catch (Exception e) {
+      System.out.println(">>>>>>>>>>" + e);
+    }
     return response;
   }
 
