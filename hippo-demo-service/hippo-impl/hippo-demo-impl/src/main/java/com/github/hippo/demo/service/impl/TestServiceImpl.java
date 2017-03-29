@@ -12,7 +12,6 @@ public class TestServiceImpl implements TestService {
   public TestResponse test(TestRequest request) {
     TestResponse response = new TestResponse();
     try {
-      Thread.sleep(3 * 1000L);
       response.setResult(request.getId() + "," + request.getMsg() + ",success");
     } catch (Exception e) {
       System.out.println(">>>>>>>>>>" + e);

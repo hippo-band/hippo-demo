@@ -11,6 +11,7 @@ import com.github.hippo.demo.dto.TestRequest;
 import com.github.hippo.demo.dto.TestResponse;
 import com.github.hippo.demo.service.TestService;
 
+
 @ContextConfiguration(locations = "classpath:/application-context.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
 public class TestServiceTest {
