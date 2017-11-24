@@ -34,15 +34,11 @@
 
 		<dependency>
 			<groupId>com.github.hippo-band</groupId>
-			<artifactId>hippo-client</artifactId>
+			<artifactId>hippo-client-with-eureka</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.github.hippo-band</groupId>
-			<artifactId>hippo-server</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.github.hippo-band</groupId>
-			<artifactId>hippo-serviceGoven</artifactId>
+			<artifactId>hippo-server-with-eureka</artifactId>
 		</dependency>
 		<!-- Spring -->
 		<dependency>

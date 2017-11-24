@@ -10,9 +10,8 @@
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<hippo.demo.version>0.0.1-SNAPSHOT</hippo.demo.version>
-		<hippo.serviceGoven.version>1.0.0</hippo.serviceGoven.version>
-		<hippo.client.version>1.0.0</hippo.client.version>
-		<hippo.server.version>1.0.0</hippo.server.version>
+		<hippo.client.version>1.1.0</hippo.client.version>
+		<hippo.server.version>1.1.0</hippo.server.version>
 		<hippo.annotation.version>1.0.0</hippo.annotation.version>
 	</properties>
 	<modules>
@@ -24,17 +23,12 @@
 		<dependencies>
 			<dependency>
 				<groupId>com.github.hippo-band</groupId>
-				<artifactId>hippo-serviceGoven</artifactId>
-				<version>${hippo.serviceGoven.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.hippo-band</groupId>
-				<artifactId>hippo-client</artifactId>
+				<artifactId>hippo-client-with-eureka</artifactId>
 				<version>${hippo.client.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.hippo-band</groupId>
-				<artifactId>hippo-server</artifactId>
+				<artifactId>hippo-server-with-eureka</artifactId>
 				<version>${hippo.server.version}</version>
 			</dependency>
 			<dependency>
@@ -85,4 +79,15 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!-- 自动发布构件到远程仓库 -->
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>http://139.196.12.123:6888/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>http://139.196.12.123:6888/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
