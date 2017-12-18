@@ -1,4 +1,4 @@
-package com.github.hippo.demo.dto;
+package com.test.hippo.demo.dto;
 
 import java.io.Serializable;
 

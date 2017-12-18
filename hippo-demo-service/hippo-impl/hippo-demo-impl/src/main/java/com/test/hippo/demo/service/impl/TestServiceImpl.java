@@ -1,4 +1,4 @@
-package com.github.hippo.demo.service.impl;
+package com.test.hippo.demo.service.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,10 +6,10 @@ import java.util.List;
 
 import com.github.hippo.annotation.HippoClient;
 import com.github.hippo.annotation.HippoServiceImpl;
-import com.github.hippo.demo.dto.TestRequest;
-import com.github.hippo.demo.dto.TestResponse;
-import com.github.hippo.demo.service.TestService;
-import com.github.hippo.demo.service.TestService2;
+import com.test.hippo.demo.dto.TestRequest;
+import com.test.hippo.demo.dto.TestResponse;
+import com.test.hippo.demo.service.TestService;
+import com.test.hippo.demo.service.TestService2;
 
 @HippoServiceImpl()
 public class TestServiceImpl implements TestService {

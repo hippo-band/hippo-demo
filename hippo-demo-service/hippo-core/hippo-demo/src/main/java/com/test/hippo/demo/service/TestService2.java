@@ -1,4 +1,4 @@
-package com.github.hippo.demo.service;
+package com.test.hippo.demo.service;
 
 import com.github.hippo.annotation.HippoService;
 

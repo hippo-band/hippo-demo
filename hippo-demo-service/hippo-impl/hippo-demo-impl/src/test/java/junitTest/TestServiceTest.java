@@ -14,33 +14,31 @@ import com.github.hippo.annotation.HippoClient;
 import com.github.hippo.callback.CallTypeHelper;
 import com.github.hippo.callback.ICallBack;
 import com.github.hippo.client.HippoProxy;
-import com.github.hippo.demo.dto.TestRequest;
-import com.github.hippo.demo.dto.TestResponse;
-import com.github.hippo.demo.service.TestService;
-
+import com.test.hippo.demo.dto.TestRequest;
+import com.test.hippo.demo.dto.TestResponse;
+import com.test.hippo.demo.service.TestService;
 
 @ContextConfiguration(locations = "classpath:/application-context.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
 public class TestServiceTest {
-  
+
+
+
   @HippoClient
   private TestService testService;
-  
+
   @Test
   public void ping() throws Exception {
-    testService.ping("sl");
+    System.out.println(testService.ping("sl") + ">>>>>>>>>>>");
   }
 
-  
+
 
   @Autowired
   private HippoProxy hippoProxy;
 
   @Test
   public void test() throws Exception {
-
-
-
     TestRequest request = new TestRequest();
     request.setId(1);
     request.setMsg("test");
@@ -82,7 +80,7 @@ public class TestServiceTest {
     testService.getUserName(in);
   }
 
- 
+
 
   @Test
   public void ping1() throws Throwable {

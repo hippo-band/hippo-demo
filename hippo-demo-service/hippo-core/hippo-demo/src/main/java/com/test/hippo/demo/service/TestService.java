@@ -1,11 +1,11 @@
-package com.github.hippo.demo.service;
+package com.test.hippo.demo.service;
 
 import java.io.InputStream;
 import java.util.List;
 
 import com.github.hippo.annotation.HippoService;
-import com.github.hippo.demo.dto.TestRequest;
-import com.github.hippo.demo.dto.TestResponse;
+import com.test.hippo.demo.dto.TestRequest;
+import com.test.hippo.demo.dto.TestResponse;
 
 
 /**

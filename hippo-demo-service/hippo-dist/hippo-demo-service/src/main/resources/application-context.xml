@@ -11,7 +11,7 @@
   		http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
   		http://www.springframework.org/schema/task 
   		http://www.springframework.org/schema/task/spring-task-3.0.xsd">
-	<context:component-scan base-package="com.github" />
+	<context:component-scan base-package="com.test" />
 	<context:property-placeholder location="classpath:database.properties" />
 	<!-- 该 BeanPostProcessor 将自动对标注 @Autowired 的 Bean 进行注入 -->
 	<bean
